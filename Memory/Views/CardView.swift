@@ -20,7 +20,6 @@ class CardView: UIView {
     
     @IBAction func cardClicked(_ sender: UIButton) {
         if (cardData.showingBack && Manager.shared.cardsRevealed < 2){
-            print(Manager.shared.cardsRevealed)
             SoundHelper.playSound(name: "card")
             self.flipCard()
         }
