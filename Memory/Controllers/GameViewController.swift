@@ -22,6 +22,8 @@ class GameViewController: UIViewController, cardDelegate {
     
     override func viewDidLoad() {
         Manager.shared.cards = Cards(totalCards: Manager.shared.grid[0] * Manager.shared.grid[1])
+        Manager.shared.cardsRevealed = 0
+        Manager.shared.score = 0
         self.initializeBoard()
         guru.isHidden = true
         restartButton.isHidden = true
@@ -63,7 +65,6 @@ class GameViewController: UIViewController, cardDelegate {
                     if (Manager.shared.score == Manager.shared.grid[0] * Manager.shared.grid[1]){
                         SoundHelper.playSound(name: "magic")
                         self.animateGuru()
-                        Manager.shared.score = 0
                     }else{
                         SoundHelper.playSound(name: "blop")
                     }
