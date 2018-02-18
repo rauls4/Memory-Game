@@ -8,8 +8,7 @@
 
 import Foundation
 
-final class Manager {               //Singleton, for now just keeps track of how many cards are flipped to prevent
-                                    //player to flip a bunch at a time
+final class Manager {               //Singleton
     private init() { }
     static let shared = Manager()
     var cards:Cards?
