@@ -12,6 +12,7 @@ import AudioToolbox
 class GameViewController: UIViewController, cardDelegate {
     private var lastCards = [CardView]()
     
+    @IBOutlet weak var restartButton: UIButton!
     @IBOutlet private weak var rowStack: UIStackView!
     @IBOutlet private weak var guru: UIImageView!
     
@@ -23,6 +24,7 @@ class GameViewController: UIViewController, cardDelegate {
         Manager.shared.cards = Cards(totalCards: Manager.shared.grid[0] * Manager.shared.grid[1])
         self.initializeBoard()
         guru.isHidden = true
+        restartButton.isHidden = true
     }
     
     private func initializeBoard(){
@@ -86,6 +88,7 @@ class GameViewController: UIViewController, cardDelegate {
     }
     
     private func animateGuru(){
+        restartButton.isHidden = false
         guru.alpha = 0
         guru.isHidden = false
         let guruOrigin = guru.center.y

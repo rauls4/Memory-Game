@@ -179,16 +179,26 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="memoryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xZs-Ue-S20">
                                         <rect key="frame" x="50" y="-31.5" width="235" height="650"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zb8-RR-RiJ">
+                                        <rect key="frame" x="50" y="-31.5" width="235" height="650"/>
+                                        <connections>
+                                            <action selector="quit:" destination="lD5-a6-oRq" eventType="touchUpInside" id="PHk-9H-G2L"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="S6N-cX-IZC" firstAttribute="top" secondItem="vWE-3I-Jst" secondAttribute="top" constant="8" id="26b-1X-Tdd"/>
+                                    <constraint firstItem="Zb8-RR-RiJ" firstAttribute="width" secondItem="xZs-Ue-S20" secondAttribute="width" id="8Gk-4G-o36"/>
                                     <constraint firstItem="xZs-Ue-S20" firstAttribute="centerY" secondItem="vWE-3I-Jst" secondAttribute="centerY" id="9uy-Vn-2v5"/>
+                                    <constraint firstItem="Zb8-RR-RiJ" firstAttribute="centerY" secondItem="xZs-Ue-S20" secondAttribute="centerY" id="Cfw-O6-tvx"/>
                                     <constraint firstAttribute="trailing" secondItem="xZs-Ue-S20" secondAttribute="trailing" constant="50" id="DGt-Vb-lqP"/>
                                     <constraint firstItem="S6N-cX-IZC" firstAttribute="leading" secondItem="vWE-3I-Jst" secondAttribute="leading" constant="8" id="IW8-Yv-afe"/>
                                     <constraint firstItem="xZs-Ue-S20" firstAttribute="leading" secondItem="vWE-3I-Jst" secondAttribute="leading" constant="50" id="SFg-fl-bNT"/>
                                     <constraint firstItem="xZs-Ue-S20" firstAttribute="centerX" secondItem="vWE-3I-Jst" secondAttribute="centerX" id="SwP-Ho-Tbj"/>
                                     <constraint firstAttribute="trailing" secondItem="S6N-cX-IZC" secondAttribute="trailing" constant="8" id="fXk-vj-BYm"/>
                                     <constraint firstAttribute="bottom" secondItem="S6N-cX-IZC" secondAttribute="bottom" constant="8" id="lHa-Ig-pCn"/>
+                                    <constraint firstItem="Zb8-RR-RiJ" firstAttribute="centerX" secondItem="xZs-Ue-S20" secondAttribute="centerX" id="p1b-aR-Z4u"/>
+                                    <constraint firstItem="Zb8-RR-RiJ" firstAttribute="height" secondItem="xZs-Ue-S20" secondAttribute="height" id="svA-OO-Qq9"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aw5-Ux-oFd">
@@ -217,6 +227,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="guru" destination="xZs-Ue-S20" id="i1U-wY-eaF"/>
+                        <outlet property="restartButton" destination="Zb8-RR-RiJ" id="j0k-Q8-fpW"/>
                         <outlet property="rowStack" destination="S6N-cX-IZC" id="Hts-Dx-FDj"/>
                     </connections>
                 </viewController>
