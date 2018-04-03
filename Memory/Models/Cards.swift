@@ -11,7 +11,7 @@ import Foundation
 struct Cards {
     var stack = [Card]()
     //This will hold our complete, shuffled stack of cards
-    private let animalsUnshuffled = ["Bat","Cat","Cow","GhostDog","Hen","Horse","Pig","Spider","Octopus","Panda"]
+    private let animalsUnshuffled = ["duck","bear","chicken","fish","giraffe","lion","monkey","penguin","fox","bunny"]
     
     init(totalCards:Int) {
         //Shuffle the seed array so we don't get the same pairs every game

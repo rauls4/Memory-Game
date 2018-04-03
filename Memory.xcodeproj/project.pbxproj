@@ -12,6 +12,8 @@
 		C46C1E5F2037B95B004D6D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46C1E5D2037B95B004D6D91 /* LaunchScreen.storyboard */; };
 		C46C1E682037B9A0004D6D91 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C1E672037B9A0004D6D91 /* GameViewController.swift */; };
 		C46C1E6A2037B9E4004D6D91 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46C1E692037B9E4004D6D91 /* CardView.swift */; };
+		C46E2904204F30DF00F45EF0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46E2903204F30DF00F45EF0 /* GameKit.framework */; };
+		C46E2906204F30E500F45EF0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46E2905204F30E500F45EF0 /* StoreKit.framework */; };
 		C4D97E6020392D4F00FCB0A0 /* SoundHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D97E5F20392D4F00FCB0A0 /* SoundHelper.swift */; };
 		C4D97E68203934EF00FCB0A0 /* magic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4D97E65203934EE00FCB0A0 /* magic.mp3 */; };
 		C4D97E69203934EF00FCB0A0 /* card.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4D97E66203934EE00FCB0A0 /* card.mp3 */; };
@@ -33,6 +35,8 @@
 		C46C1E602037B95B004D6D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C46C1E672037B9A0004D6D91 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C46C1E692037B9E4004D6D91 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C46E2903204F30DF00F45EF0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		C46E2905204F30E500F45EF0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C4D97E5F20392D4F00FCB0A0 /* SoundHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundHelper.swift; sourceTree = "<group>"; };
 		C4D97E65203934EE00FCB0A0 /* magic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = magic.mp3; sourceTree = "<group>"; };
 		C4D97E66203934EE00FCB0A0 /* card.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = card.mp3; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46E2904204F30DF00F45EF0 /* GameKit.framework in Frameworks */,
+				C46E2906204F30E500F45EF0 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 				C4DA26CC20389F8A00CDAEC6 /* Assets.xcassets */,
 				C46C1E532037B95B004D6D91 /* Memory */,
 				C46C1E522037B95B004D6D91 /* Products */,
+				C46E2900204F303600F45EF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +104,15 @@
 				C46C1E672037B9A0004D6D91 /* GameViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C46E2900204F303600F45EF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C46E2905204F30E500F45EF0 /* StoreKit.framework */,
+				C46E2903204F30DF00F45EF0 /* GameKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C4D97E6B203934F200FCB0A0 /* Resources */ = {
@@ -170,6 +186,14 @@
 					C46C1E502037B95B004D6D91 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -297,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -349,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -361,12 +385,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = memory;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCPDNB5CL5;
 				INFOPLIST_FILE = Memory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.silva.Memory;
+				PRODUCT_BUNDLE_IDENTIFIER = com.silva.easymemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -376,12 +403,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = memory;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCPDNB5CL5;
 				INFOPLIST_FILE = Memory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.silva.Memory;
+				PRODUCT_BUNDLE_IDENTIFIER = com.silva.easymemory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

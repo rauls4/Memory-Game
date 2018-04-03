@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14105" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Futura.ttc">
-            <string>Futura-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Lobby View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -28,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="18.5" width="375" height="650"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="aA8-af-2ZG">
-                                <rect key="frame" x="20" y="40" width="335" height="280.5"/>
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdh-5i-kgL">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="52"/>
@@ -43,13 +38,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6gU-5B-AOA">
-                                        <rect key="frame" x="0.0" y="106.5" width="335" height="174"/>
+                                        <rect key="frame" x="0.0" y="106.5" width="335" height="500.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSe-jg-zq4" customClass="DesignableRoundButtons" customModule="Memory" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="0.0" width="167.5" height="36"/>
+                                                <rect key="frame" x="84" y="0.0" width="167.5" height="160"/>
                                                 <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                                <state key="normal" title="3 × 4">
+                                                <state key="normal" title="2 × 3">
                                                     <color key="titleColor" red="0.92070292539999998" green="0.86442879530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -68,10 +63,10 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5l-j5-xJK" customClass="DesignableRoundButtons" customModule="Memory" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="46" width="167.5" height="36"/>
+                                                <rect key="frame" x="84" y="170" width="167.5" height="160.5"/>
                                                 <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                                <state key="normal" title="5 × 2">
+                                                <state key="normal" title="3 × 4">
                                                     <color key="titleColor" red="0.92070292539999998" green="0.86442879530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -90,29 +85,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIl-Yb-r1E" customClass="DesignableRoundButtons" customModule="Memory" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="92" width="167.5" height="36"/>
-                                                <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                                <state key="normal" title="4 × 4">
-                                                    <color key="titleColor" red="0.92070292539999998" green="0.86442879530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="15"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="3"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="gridSizeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2su-JF-rPC"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajh-y1-olK" customClass="DesignableRoundButtons" customModule="Memory" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="138" width="167.5" height="36"/>
+                                                <rect key="frame" x="84" y="340.5" width="167.5" height="160"/>
                                                 <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                                 <state key="normal" title="4 × 5">
@@ -130,12 +103,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="gridSizeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ApA-46-9UM"/>
+                                                    <action selector="gridSizeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2su-JF-rPC"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="ajh-y1-olK" firstAttribute="width" secondItem="6gU-5B-AOA" secondAttribute="width" multiplier="0.5" id="QCF-J1-UgR"/>
                                             <constraint firstItem="JSe-jg-zq4" firstAttribute="top" secondItem="6gU-5B-AOA" secondAttribute="top" id="Z3y-9M-Ab4"/>
                                             <constraint firstItem="TIl-Yb-r1E" firstAttribute="width" secondItem="6gU-5B-AOA" secondAttribute="width" multiplier="0.5" id="gEs-1t-j06"/>
                                             <constraint firstItem="i5l-j5-xJK" firstAttribute="width" secondItem="6gU-5B-AOA" secondAttribute="width" multiplier="0.5" id="qzR-Lz-zhG"/>
@@ -147,6 +119,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92070292539999998" green="0.86442879530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aA8-af-2ZG" secondAttribute="bottom" constant="20" id="6XW-Bk-Zvj"/>
                             <constraint firstItem="aA8-af-2ZG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DDI-Mq-vWj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aA8-af-2ZG" secondAttribute="trailing" constant="20" id="S3R-Zm-Dbu"/>
                             <constraint firstItem="ifF-GK-AyS" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ctm-Dw-hUE"/>
@@ -201,13 +174,15 @@
                                     <constraint firstItem="Zb8-RR-RiJ" firstAttribute="height" secondItem="xZs-Ue-S20" secondAttribute="height" id="svA-OO-Qq9"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aw5-Ux-oFd">
-                                <rect key="frame" x="10" y="20" width="43" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aw5-Ux-oFd">
+                                <rect key="frame" x="10" y="20" width="90" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="fTP-tD-Sd7"/>
-                                    <constraint firstAttribute="width" constant="43" id="peW-wv-HTB"/>
+                                    <constraint firstAttribute="width" constant="90" id="peW-wv-HTB"/>
                                 </constraints>
-                                <state key="normal" image="backNavBlue"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.53725490196078429" green="0.18431372549019609" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="quit:" destination="lD5-a6-oRq" eventType="touchUpInside" id="qAK-49-86c"/>
                                 </connections>
@@ -237,7 +212,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="backNavBlue" width="95" height="82"/>
         <image name="memoryLogo" width="650" height="650"/>
     </resources>
 </document>

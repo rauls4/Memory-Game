@@ -32,7 +32,7 @@ class CardView: UIView {
               endImage = UIImage(named: cardData.type + "image")
             Manager.shared.cardsRevealed =  Manager.shared.cardsRevealed + 1
         }else{
-             endImage = UIImage(named: "cardBack")
+             endImage = UIImage(named: "cardimage")
             Manager.shared.cardsRevealed =  Manager.shared.cardsRevealed - 1
         }
         
