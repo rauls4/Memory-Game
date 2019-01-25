@@ -21,10 +21,10 @@ struct Cards {
             //This was occuring in the 4X5 grid (20 cards, with only 8 supplied animals, I added a couple more)
             debugPrint("Game requires more cards than there are pairs")
         }else{
-            let limitedAnimals = animals.enumerated().flatMap{ $0.offset < (totalCards/2) ? $0.element : nil } //limit pairs to our max
+            let limitedAnimals = animals.enumerated().compactMap{ $0.offset < (totalCards/2) ? $0.element : nil } //limit pairs to our max
             for animal in limitedAnimals {
                 for _ in 0...1{//twice for each animal
-                    let newCard = Card(type: animal as! String, showingBack: true)
+                    let newCard = Card(type: animal as? String, showingBack: true)
                     stack.append(newCard)
                     //add the new card to the deck
                 }
